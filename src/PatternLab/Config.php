@@ -273,7 +273,7 @@ class Config {
 	*/
 	public static function setOption($optionName = "", $optionValue = "") {
 		
-		if (empty($optionName) || empty($optionValue)) {
+		if ($optionName === "" || $optionValue === "") {
 			return false;
 		}
 		
